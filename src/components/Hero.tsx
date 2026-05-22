@@ -37,7 +37,6 @@ export function Hero() {
 
   return (
     <Reveal className="min-h-[700px] flex flex-col justify-center items-start mt-12 mb-32">
-      <p className="text-label-mono text-primary mb-4 tracking-widest uppercase opacity-80 pl-1 border-l-2 border-primary">System.init()</p>
       <h1 className="text-display-xl text-on-surface mb-6 max-w-4xl tracking-tighter">
         Building Ideas Into <br/>
         <span className="text-gradient-primary">Digital Reality</span>
