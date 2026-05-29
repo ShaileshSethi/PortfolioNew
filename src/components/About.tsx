@@ -1,5 +1,6 @@
 import { Terminal, Gauge, Pencil } from 'lucide-react';
 import { Reveal } from './Reveal';
+import directiveImg from '../assets/The Directive.jpg';
 
 export function About() {
   return (
@@ -10,9 +11,9 @@ export function About() {
           <div className="glass-panel rounded-2xl p-3 relative z-10 aspect-square overflow-hidden border border-outline-variant/30">
             <div className="w-full h-full bg-surface-container-high rounded-lg relative overflow-hidden group">
               <img 
-                alt="Developer Workspace" 
-                className="w-full h-full object-cover opacity-50 group-hover:opacity-70 motion-transition mix-blend-luminosity" 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIfuzWik0phIPYbQcX5zwf-bbovbWz3GK7oW5n87gKj58Cli4uGKDuyRycnVcmjHEZY7cLQgCyyaS4eSxr_tS2LzYFqReWh9jyJBHT7wK9TkZ_EpMc4ga057qppZmyQGMOaOEc55VJqBqqc8yTwvjeQm74_xet_nyyFELTov-8tpDYAs7OcxY6tLZ9i7gWF7-74_hRdbW2tzTKn1Q6_voGkYAitH2N8M_et5pvH0ObNzE0bA6VPZR75AEsOW69y5MM6WtNOqODkjuM" 
+                alt="The Directive" 
+                className="w-full h-full object-cover opacity-60 group-hover:opacity-75 motion-transition" 
+                src={directiveImg}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
             </div>
