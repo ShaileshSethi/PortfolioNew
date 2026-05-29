@@ -14,9 +14,9 @@ export function Projects() {
         </a>
       </Reveal>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 auto-rows-[380px] md:auto-rows-[420px] gap-5 md:gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 auto-rows-[320px] sm:auto-rows-[360px] md:auto-rows-[420px] gap-4 md:gap-6">
         {/* Project 1 */}
-        <Reveal className="glass-panel rounded-2xl overflow-hidden group card-hover relative flex flex-col justify-end p-6 md:p-8 border border-error/30">
+        <Reveal className="glass-panel rounded-2xl overflow-hidden group card-hover relative flex flex-col justify-end p-5 sm:p-6 md:p-8 border border-error/30">
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/95 to-transparent z-10"></div>
           <div className="absolute inset-0 bg-error/3 group-hover:bg-error/8 motion-transition z-0"></div>
           <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-40 h-40 bg-error rounded-full blur-3xl opacity-15 group-hover:opacity-30 motion-transition"></div>
@@ -40,7 +40,7 @@ export function Projects() {
         </Reveal>
 
         {/* Project 2 */}
-        <Reveal className="glass-panel rounded-2xl overflow-hidden group card-hover relative flex flex-col justify-end p-6 md:p-8 border border-secondary-fixed-dim/30">
+        <Reveal className="glass-panel rounded-2xl overflow-hidden group card-hover relative flex flex-col justify-end p-5 sm:p-6 md:p-8 border border-secondary-fixed-dim/30">
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/90 to-transparent z-10"></div>
           <img alt="Teleport Killer" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 motion-transition z-0 opacity-35 mix-blend-screen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPfAARHmgaLCNhOrsHVNzuBDZsZFV0ErzdCGp3coJE2Bk56kabZZVZwV2PaA_EEdN-GZWy3lcrl5NW30d5uazwAiNMCpWGF6P82p6fwmy0iYCiQP1mVOoCnmN_gQajcs52YTHD11ilgs1WTajRjX1guj5K8cy2zQo4svjbcj-ci9QX9FdtNcdi2QHxVnilTJPlZMvLWQ1Dtr_bLLbZnuaAJbdlZ-KWmrc4I4QRG115LueMjXFfFX1LJ3ES7oEPpYDZKuMWcx0763-I"/>
           <div className="relative z-20">
@@ -58,7 +58,7 @@ export function Projects() {
         </Reveal>
 
         {/* Project 3 */}
-        <Reveal className="glass-panel rounded-2xl overflow-hidden group card-hover relative flex flex-col justify-end p-6 md:p-8 border border-primary/30">
+        <Reveal className="glass-panel rounded-2xl overflow-hidden group card-hover relative flex flex-col justify-end p-5 sm:p-6 md:p-8 border border-primary/30">
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/95 to-transparent z-10"></div>
           <div className="absolute inset-0 bg-primary/3 group-hover:bg-primary/8 motion-transition z-0"></div>
           <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-40 h-40 bg-primary rounded-full blur-3xl opacity-12 z-0"></div>
@@ -82,7 +82,7 @@ export function Projects() {
         </Reveal>
 
         {/* Project 4 */}
-        <Reveal className="glass-panel rounded-2xl overflow-hidden group card-hover relative flex flex-col justify-end p-6 md:p-8 border border-tertiary-container/30">
+        <Reveal className="glass-panel rounded-2xl overflow-hidden group card-hover relative flex flex-col justify-end p-5 sm:p-6 md:p-8 border border-tertiary-container/30">
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/95 to-transparent z-10"></div>
           <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-40 h-40 bg-tertiary-container rounded-full blur-3xl opacity-8 z-0"></div>
           <div className="relative z-20">

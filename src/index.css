@@ -252,3 +252,164 @@ html {
         scroll-behavior: auto !important;
     }
 }
+
+@media (max-width: 768px) {
+    .text-display-xl {
+        font-size: 56px;
+        line-height: 1.08;
+    }
+
+    .text-headline-lg {
+        font-size: 40px;
+        line-height: 1.12;
+    }
+
+    .text-body-md {
+        font-size: 17px;
+    }
+
+    .hero-visual-card {
+        animation-duration: 10s;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-display-xl {
+        font-size: 42px;
+        line-height: 1.05;
+    }
+
+    .text-headline-lg {
+        font-size: 32px;
+        line-height: 1.1;
+    }
+
+    .text-headline-lg-mobile {
+        font-size: 26px;
+    }
+
+    .text-body-md {
+        font-size: 16px;
+        line-height: 1.55;
+    }
+
+    .text-label-mono {
+        font-size: 12px;
+    }
+
+    .hero-visual-card {
+        animation: none;
+    }
+
+    .hero-logo,
+    .hero-logo-ring,
+    .hero-logo-ring-delay {
+        animation: none;
+    }
+
+    .hero-visual-card .absolute.top-4,
+    .hero-visual-card .absolute.right-4 {
+        max-width: calc(100% - 1rem);
+    }
+
+    .glass-panel {
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+    }
+}
+
+@media (max-width: 640px) {
+    main {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 6.25rem;
+    }
+
+    .bg-blob {
+        filter: blur(80px);
+        opacity: 0.1;
+    }
+}
+
+@media (max-width: 480px) and (orientation: portrait) {
+    .hero-visual-card {
+        max-width: 220px;
+        aspect-ratio: 3 / 4;
+    }
+
+    .hero-visual-card .glass-panel {
+        padding: 0.4rem 0.65rem;
+    }
+
+    .hero-visual-card .text-label-mono {
+        font-size: 10px;
+    }
+
+    .hero-visual-card .text-white.font-semibold {
+        font-size: 0.8rem;
+    }
+
+    .hero-visual-card .absolute.bottom-3,
+    .hero-visual-card .absolute.bottom-4 {
+        bottom: 0.45rem;
+    }
+
+    .hero-visual-card .absolute.left-3,
+    .hero-visual-card .absolute.right-3,
+    .hero-visual-card .absolute.top-3,
+    .hero-visual-card .absolute.top-4,
+    .hero-visual-card .absolute.left-4,
+    .hero-visual-card .absolute.right-4 {
+        top: 0.5rem;
+        left: 0.5rem;
+        right: 0.5rem;
+    }
+
+    .hero-logo {
+        width: 56%;
+    }
+
+    main {
+        padding-left: 0.85rem;
+        padding-right: 0.85rem;
+    }
+
+    .glass-panel {
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+    }
+}
+
+@media (max-width: 390px) and (orientation: portrait) {
+    .hero-visual-card {
+        max-width: 205px;
+    }
+
+    .text-display-xl {
+        font-size: 34px;
+    }
+
+    .text-headline-lg {
+        font-size: 28px;
+    }
+
+    .text-body-md {
+        font-size: 14px;
+    }
+
+    .hero-visual-card .hero-logo-ring,
+    .hero-visual-card .hero-logo-ring-delay {
+        display: none;
+    }
+
+    .hero-visual-card .absolute.bottom-3,
+    .hero-visual-card .absolute.bottom-4,
+    .hero-visual-card .absolute.left-3,
+    .hero-visual-card .absolute.right-3,
+    .hero-visual-card .absolute.top-3,
+    .hero-visual-card .absolute.top-4,
+    .hero-visual-card .absolute.left-4,
+    .hero-visual-card .absolute.right-4 {
+        max-width: calc(100% - 0.75rem);
+    }
+}

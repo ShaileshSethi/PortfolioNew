@@ -18,22 +18,22 @@ export function Contact() {
   };
 
   return (
-    <Reveal className="mb-20 md:mb-24" id="contact">
-      <div className="glass-panel rounded-3xl p-6 md:p-12 border border-primary/20 relative overflow-hidden">
+    <Reveal className="mb-16 md:mb-24" id="contact">
+      <div className="glass-panel rounded-3xl p-5 sm:p-6 md:p-12 border border-primary/20 relative overflow-hidden">
         <div className="absolute -top-32 -right-32 md:-top-40 md:-right-40 w-80 h-80 md:w-96 md:h-96 bg-primary-container rounded-full blur-[80px] opacity-8"></div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 relative z-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 relative z-10">
           <div>
-            <h2 className="text-display-xl mb-4 md:mb-5 tracking-tighter leading-tight">
+            <h2 className="text-[clamp(2.3rem,8vw,4.5rem)] md:text-display-xl mb-3 md:mb-5 tracking-tighter leading-tight">
               Let's Build Something{" "}
               <span className="text-gradient-primary">Amazing.</span>
             </h2>
-            <p className="text-body-md text-on-surface-variant mb-8">
+            <p className="text-sm sm:text-body-md text-on-surface-variant mb-6 md:mb-8">
               Open for new opportunities, collaborations, and ambitious
               projects. Drop a message to initialize communication.
             </p>
-            <div className="space-y-3 text-label-mono text-sm">
+            <div className="space-y-2.5 text-label-mono text-sm">
               <a
-                className="flex items-center gap-3 text-on-surface hover:text-primary motion-transition group"
+                className="flex items-center gap-3 text-on-surface hover:text-primary motion-transition group py-2 px-2 rounded"
                 href="mailto:shaileshtunes@gmail.com"
               >
                 <Mail className="text-primary w-5 h-5 flex-shrink-0" />
@@ -42,7 +42,7 @@ export function Contact() {
                 </span>
               </a>
               <a
-                className="flex items-center gap-3 text-on-surface hover:text-primary motion-transition group"
+                className="flex items-center gap-3 text-on-surface hover:text-primary motion-transition group py-2 px-2 rounded"
                 href="https://www.linkedin.com/in/shailesh-sethi-3aab58378/"
                 target="_blank"
               >
@@ -52,7 +52,7 @@ export function Contact() {
                 </span>
               </a>
               <a
-                className="flex items-center gap-3 text-on-surface hover:text-primary motion-transition group"
+                className="flex items-center gap-3 text-on-surface hover:text-primary motion-transition group py-2 px-2 rounded"
                 href="#"
               >
                 <Code className="text-primary w-5 h-5 flex-shrink-0" />
@@ -63,13 +63,13 @@ export function Contact() {
             </div>
           </div>
           <div>
-            <form className="space-y-5" onSubmit={handleSubmit}>
+            <form className="space-y-4 sm:space-y-5" onSubmit={handleSubmit}>
               <div>
                 <label className="block text-label-mono text-on-surface-variant mb-2 uppercase text-xs tracking-widest">
                   Name
                 </label>
                 <input
-                  className="w-full bg-surface-container-high border-x-0 border-t-0 border-b border-outline-variant py-2.5 px-0 text-white text-body-md focus:ring-0 input-glow transition-all duration-300 outline-none"
+                  className="w-full bg-surface-container-high border-x-0 border-t-0 border-b border-outline-variant py-2.5 px-0 text-white text-sm sm:text-body-md focus:ring-0 input-glow transition-all duration-300 outline-none"
                   placeholder="John Doe"
                   type="text"
                   value={name}
@@ -81,7 +81,7 @@ export function Contact() {
                   Email
                 </label>
                 <input
-                  className="w-full bg-surface-container-high border-x-0 border-t-0 border-b border-outline-variant py-2.5 px-0 text-white text-body-md focus:ring-0 input-glow transition-all duration-300 outline-none"
+                  className="w-full bg-surface-container-high border-x-0 border-t-0 border-b border-outline-variant py-2.5 px-0 text-white text-sm sm:text-body-md focus:ring-0 input-glow transition-all duration-300 outline-none"
                   placeholder="john@example.com"
                   type="email"
                   value={email}
@@ -93,7 +93,7 @@ export function Contact() {
                   Message
                 </label>
                 <textarea
-                  className="w-full bg-surface-container-high border-x-0 border-t-0 border-b border-outline-variant py-2.5 px-0 text-white text-body-md focus:ring-0 input-glow transition-all duration-300 resize-none outline-none"
+                  className="w-full bg-surface-container-high border-x-0 border-t-0 border-b border-outline-variant py-2.5 px-0 text-white text-sm sm:text-body-md focus:ring-0 input-glow transition-all duration-300 resize-none outline-none"
                   placeholder="Enter your message..."
                   rows={4}
                   value={message}
@@ -101,7 +101,7 @@ export function Contact() {
                 ></textarea>
               </div>
               <button
-                className="w-full py-3 bg-gradient-to-r from-primary to-secondary text-on-primary text-label-mono font-bold rounded shadow-lg hover:glow-primary hover:scale-[1.01] motion-transition flex justify-center items-center gap-2 text-sm"
+                className="w-full py-3 bg-gradient-to-r from-primary to-secondary text-on-primary text-label-mono font-bold rounded shadow-lg hover:glow-primary hover:scale-[1.01] motion-transition flex justify-center items-center gap-2 text-sm min-h-12"
                 type="submit"
               >
                 Send Message <Send size={16} />
