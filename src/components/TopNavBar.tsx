@@ -4,7 +4,7 @@ export function TopNavBar() {
   return (
     <nav className="bg-surface/50 backdrop-blur-xl text-primary fixed top-0 left-0 right-0 w-full z-50 border-b border-white/10 shadow-[0_2px_20px_rgba(0,0,0,0.1)] flex justify-between items-center px-4 md:px-12 h-16 md:h-20">
       <div className="text-headline-lg-mobile md:text-headline-lg font-bold tracking-tighter text-primary">
-        SS
+        <img src="/src/assets/logo-ss.png" alt="Logo" className="h-10 md:h-14 w-auto" />
       </div>
       <div className="hidden md:flex gap-6 md:gap-8 items-center">
         <a className="text-label-mono text-primary font-bold border-b-2 border-primary pb-0.5 text-xs md:text-sm" href="#work">Work</a>
