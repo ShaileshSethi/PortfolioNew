@@ -1,6 +1,6 @@
 import { Terminal, Gauge, Pencil } from 'lucide-react';
 import { Reveal } from './Reveal';
-import directiveImg from '../assets/The Directive.jpg';
+import directiveImg from '../assets/the-directive.jpg';
 
 export function About() {
   return (
