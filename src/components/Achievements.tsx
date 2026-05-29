@@ -45,21 +45,21 @@ export function Achievements() {
   ];
 
   return (
-    <section className="mb-40" id="achievements">
-      <Reveal className="mb-16 border-b border-outline-variant/30 pb-6">
+    <section className="mb-32 md:mb-40" id="achievements">
+      <Reveal className="mb-12 md:mb-14 border-b border-outline-variant/30 pb-5 md:pb-6">
         <p className="text-label-mono text-secondary-fixed-dim mb-2 uppercase tracking-widest">02 // Milestones</p>
         <h2 className="text-display-xl">Trajectory</h2>
       </Reveal>
-      <div className="relative border-l border-outline-variant ml-4 md:ml-8 space-y-12 pb-8">
+      <div className="relative border-l border-outline-variant ml-4 md:ml-8 space-y-8 pb-6">
         {achievements.map((item, idx) => (
-          <Reveal key={idx} className="relative pl-8 md:pl-12 group">
-            <div className={`absolute -left-[5px] top-2 w-[11px] h-[11px] rounded-full bg-surface border-2 ${item.borderColor} ${item.groupHoverBg} motion-transition`}></div>
-            <div className={`glass-panel p-6 rounded-xl border border-outline-variant/30 ${item.hoverBorder} motion-transition`}>
-              <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-2">
-                <h3 className="text-headline-lg-mobile text-white">{item.title}</h3>
-                <span className={`text-label-mono mt-2 md:mt-0 px-3 py-1 rounded border ${item.badgeBg}`}>{item.badge}</span>
+          <Reveal key={idx} className="relative pl-7 md:pl-10 group">
+            <div className={`absolute -left-[6px] top-2 w-3 h-3 rounded-full bg-surface border-2 ${item.borderColor} ${item.groupHoverBg} motion-transition`}></div>
+            <div className={`glass-panel p-5 md:p-6 rounded-xl border border-outline-variant/30 ${item.hoverBorder} motion-transition`}>
+              <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-3 mb-2">
+                <h3 className="text-headline-lg-mobile text-white leading-snug">{item.title}</h3>
+                <span className={`text-label-mono text-xs px-3 py-1 rounded border whitespace-nowrap flex-shrink-0 ${item.badgeBg}`}>{item.badge}</span>
               </div>
-              <p className="text-body-md text-on-surface-variant">{item.desc}</p>
+              <p className="text-body-md text-on-surface-variant leading-relaxed">{item.desc}</p>
             </div>
           </Reveal>
         ))}
