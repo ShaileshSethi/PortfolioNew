@@ -27,7 +27,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className="bg-background text-on-background antialiased selection:bg-primary-container selection:text-on-primary-container relative w-full min-h-screen overflow-hidden">
+    <div className="bg-background text-on-background antialiased selection:bg-primary-container selection:text-on-primary-container relative">
       {loading && <Loader />}
       
       <div className="light-leak"></div>
@@ -44,7 +44,7 @@ export default function App() {
 
       <TopNavBar />
       
-      <main className="max-w-[1280px] mx-auto px-4 md:px-12 pt-28 md:pt-32 pb-16 md:pb-24 relative z-10">
+      <main className="max-w-[1280px] mx-auto px-4 md:px-16 pt-32 pb-24 relative z-10 overflow-x-hidden">
         <Hero />
         <About />
         <Projects />

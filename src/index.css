@@ -43,21 +43,6 @@
   --spacing-container-max: 1280px;
 }
 
-* {
-    box-sizing: border-box;
-}
-
-html,
-body,
-#root {
-    width: 100%;
-    min-height: 100%;
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}
-
 body {
     background-color: #050505;
     color: #e5e2e1;
@@ -126,7 +111,7 @@ body {
 }
 
 .bg-blob {
-    position: fixed;
+    position: absolute;
     border-radius: 50%;
     filter: blur(100px);
     opacity: 0.15;
@@ -181,8 +166,8 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     pointer-events: none;
     z-index: 0;
     background: radial-gradient(
