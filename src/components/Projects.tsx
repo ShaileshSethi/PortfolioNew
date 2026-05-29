@@ -14,9 +14,9 @@ export function Projects() {
         </a>
       </Reveal>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 auto-rows-[380px] md:auto-rows-[420px] gap-5 md:gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 auto-rows-[340px] sm:auto-rows-[360px] md:auto-rows-[420px] gap-4 md:gap-6">
         {/* Project 1 */}
-        <Reveal className="glass-panel rounded-2xl overflow-hidden group card-hover relative flex flex-col justify-end p-6 md:p-8 border border-error/30">
+        <Reveal className="glass-panel rounded-2xl overflow-hidden group card-hover relative flex flex-col justify-end p-5 sm:p-6 md:p-8 border border-error/30 focus-within:ring-2 focus-within:ring-error">
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/95 to-transparent z-10"></div>
           <div className="absolute inset-0 bg-error/3 group-hover:bg-error/8 motion-transition z-0"></div>
           <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-40 h-40 bg-error rounded-full blur-3xl opacity-15 group-hover:opacity-30 motion-transition"></div>
@@ -29,10 +29,10 @@ export function Projects() {
             <h3 className="text-headline-lg-mobile mb-2 text-white leading-tight">SafeZones</h3>
             <p className="text-body-md text-on-surface-variant text-sm mb-5 leading-relaxed line-clamp-2">Emergency platform with real-time dashboard and critical alert systems.</p>
             <div className="flex gap-4 flex-wrap">
-              <a className="inline-flex items-center gap-1.5 text-label-mono text-error hover:text-white motion-transition text-xs" href="https://safezones.vercel.app/" target="_blank">
+              <a className="inline-flex items-center gap-1.5 text-label-mono text-error hover:text-white motion-transition text-xs px-2 py-1 rounded focus:outline-none focus:ring-2 focus:ring-error" href="https://safezones.vercel.app/" target="_blank" rel="noopener noreferrer">
                 Demo <ExternalLink size={14} />
               </a>
-              <a className="inline-flex items-center gap-1.5 text-label-mono text-error hover:text-white motion-transition text-xs" href="https://lnkd.in/gMsawjRV" target="_blank">
+              <a className="inline-flex items-center gap-1.5 text-label-mono text-error hover:text-white motion-transition text-xs px-2 py-1 rounded focus:outline-none focus:ring-2 focus:ring-error" href="https://lnkd.in/gMsawjRV" target="_blank" rel="noopener noreferrer">
                 Info <Info size={14} />
               </a>
             </div>
